@@ -1,0 +1,32 @@
+
+<div class="container mt-5">
+        <!-- Carte avec fond blanc -->
+        <div class="custom-card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-1 left-gray-bar"></div>
+                <div class="col-md-11">
+                    <div class="card-body">
+                        <p class="card-text bold-line"><%=@laQuestion%></p>
+                        <p class="card-text italic-line"> - You</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carte avec fond jaune très clair -->
+        <div class="custom-card-light-yellow mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-1 left-gray-bar"></div>
+                <div class="col-md-11">
+                    <div class="card-body">
+                        <p class="card-text bold-line"><%= @laReponse %></p>
+                        <p class="card-text italic-line"> - Your coach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+      <%= link_to "Ask a new question", ask_path %>
+    </div>
